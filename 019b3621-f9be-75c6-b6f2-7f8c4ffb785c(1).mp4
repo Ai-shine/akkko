@@ -1,7 +1,61 @@
- Поздравляю с Рождеством 
-           КОЛЯДКА
+/* Подключаем шрифт */
+@font-face {
+  font-family: 'PudelENKO';
+  src: url('fonts/PudelENKO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-В ночи зажглась звезда,  
-Рождество пришло всегда!  
-Ангел весть несёт с небес:  
-«Христос родился — мир чудес!»
+/* Общий стиль */
+body {
+  background-color: #0b2a42;
+  color: #ffd700;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Видео */
+.video-wrapper {
+  margin-bottom: 30px;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Текст колядки */
+.koljadka-text {
+  font-family: 'PudelENKO', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.6;
+  text-shadow:
+    0 0 10px #ff0,
+    0 0 20px #ff0,
+    0 0 30px #ff8c00;
+  letter-spacing: 1px;
+  white-space: pre-line; /* Сохраняет переносы */
+  margin-top: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .koljadka-text {
+    font-size: 20px;
+  }
+
+  .video-wrapper iframe,
+  .video-wrapper video {
+    width: 100%;
+    height: auto;
+  }
+}
