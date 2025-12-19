@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Колядка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Рождественская колядка</h1>
+    <div class="koljadka">
+      Поздравляю с Рождеством Христовым вас!<br><br>
+
+      В ночи зажглась звезда,<br>
+      Рождество пришло — вас всех поздравляю!<br>
+      Ангел вещёт небеса с небышками:<br>
+      «Христос родился — мира жду чудеса!»
+    </div>
+  </div>
+</body>
+</html>
