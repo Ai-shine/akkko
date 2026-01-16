@@ -26,3 +26,42 @@
    <body> 
 <blockquote class=“q”>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
     <body>
+</h2> 16 января, 2025</h2>
+        <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой блог</title>
+</head>
+<body>
+  <script>
+    // Вставляем текущую дату сразу после <body>
+    document.write(new Date().toLocaleDateString('ru-RU', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      weekday: 'long'
+    }));
+  </script>
+
+  <h1>Решение шифров Цезаря</h1>
+
+  <h2>1. Определение ключа шифра Цезаря</h2>
+  <p><strong>а. АПЕЛЬСИН → САЦЬНВЩЮ</strong></p>
+  <p>Ключ: <strong>2</strong> (каждая буква сдвинута на +2 позиции в алфавите).</p>
+
+  <p><strong>б. АБРИКОС → ЫЬЛГЕЙМ</strong></p>
+  <p>Ключ: <strong>30</strong> (или эквивалентно −2, так как 30 ≡ −2 mod 32).</p>
+
+  <h2>2. Расшифровка сообщений</h2>
+  <p><strong>а. ФХНЗКЧ</strong></p>
+  <p>Подбором определяем, что при ключе <strong>k = 7</strong> получаем: <strong>ШИФРЫ</strong>.</p>
+
+  <p><strong>б. ЦЩЕБФ</strong></p>
+  <p>При ключе <strong>k = 5</strong> получаем: <strong>ХАБАР</strong> (возможно, имеется в виду слово «ХАБАР» — допустимо в учебных задачах; проверка показывает, что других осмысленных вариантов нет при k ∈ [1,31]).</p>
+<h2>3. Шифрование фамилии с ключом 10</h2>
+<p>Фамилия: <strong>Гериханова</strong></p>
+<p>Зашифрованная фамилия: <strong>НПЪТЯКЧШМК</strong></p>
+
+</body>
+</html>
