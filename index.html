@@ -121,3 +121,36 @@
   </div>
 </body>
 </html>
+# RSA Simple Demo
+
+A minimal educational implementation of the RSA cryptosystem using small prime numbers.
+
+This demo illustrates how RSA key generation, encryption, and decryption work — **not for real-world use**, but for learning purposes.
+
+> 🔐 **Warning**: Never use such small keys in production! Real RSA uses primes with 300+ digits.
+
+---
+
+## 📅 Last Updated
+20 January 2026
+
+## 🔢 Example Used
+
+- \( p = 3 \)
+- \( q = 5 \)
+- \( n = 15 \)
+- \( \varphi(n) = 8 \)
+- Public exponent \( e = 3 \)
+- Private exponent \( d = 3 \)
+- Message \( m = 2 \)
+- Ciphertext \( c = 8 \)
+
+✅ Encryption: \( 2^3 \bmod 15 = 8 \)  
+✅ Decryption: \( 8^3 \bmod 15 = 2 \)
+
+---
+
+## ▶️ How to Run
+
+```bash
+python rsa_demo.py
