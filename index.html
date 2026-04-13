@@ -183,111 +183,7 @@ Notes:
 3                7       69.188190
 4               10       97.619836
 
-<h2>24.03.2026.</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Точность модели</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            text-align: center;
-        }
-        .accuracy {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: conic-gradient(#667eea 0% 85%, #e0e0e0 85% 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px;
-        }
-        .accuracy-inner {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .accuracy-value {
-            font-size: 48px;
-            font-weight: bold;
-            color: #667eea;
-        }
-        .metrics {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .metric {
-            background: #f5f5f5;
-            padding: 15px 25px;
-            border-radius: 10px;
-        }
-        .metric-value {
-            font-size: 24px;
-            font-weight: bold;
-            color: #667eea;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>🎯 Точность модели</h1>
-        
-        <div class="accuracy">
-            <div class="accuracy-inner">
-                <div class="accuracy-value" id="accuracy">85%</div>
-                <div>Точность</div>
-            </div>
-        </div>
-        
-        <div class="metrics">
-            <div class="metric">
-                <div class="metric-value" id="f1">0.82</div>
-                <div>F1-Score</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value" id="precision">0.87</div>
-                <div>Precision</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value" id="recall">0.79</div>
-                <div>Recall</div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        fetch('metrics.json')
-            .then(r => r.json())
-            .then(data => {
-                document.getElementById('accuracy').textContent = data.accuracy + '%';
-                document.getElementById('f1').textContent = data.f1_score;
-                document.getElementById('precision').textContent = data.precision || '0.87';
-                document.getElementById('recall').textContent = data.recall;
-            })
-            .catch(() => console.log('Данные по умолчанию'));
-    </script>
-</body>
-</html>
    <h2>28.03.2026.</h2>
      Итоговые результаты: 
 Ошибка на обучении (MSE): 0.004439441058636429
@@ -298,3 +194,6 @@ Notes:
 
      <h2>07.04.2026.</h2>
      <img src="Icons/Диаграмма без названия.drawio(11)" alt="Диаграмма">  
+
+     <h2>13.04.2026.</h2>
+     img src="Icons/.drawio(11)" alt="Диаграмма">  
